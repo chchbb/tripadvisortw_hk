@@ -61,7 +61,7 @@ def parse_list(root):
             'telephone': telephone,
             'description': description,
         }
-        scraperwiki.sqlite.save(unique_keys=['source_url'], data=data, table_name="tripadvisor_toronto")
+        scraperwiki.sqlite.save(unique_keys=['source_url'], data=data, table_name="tripadvisortw_hk")
 
 
 def parse_listing_pages(start_url):
