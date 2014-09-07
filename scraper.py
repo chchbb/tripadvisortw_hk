@@ -9,7 +9,7 @@ from pyquery import PyQuery as pq
 print "Starting"
 
 header = { 'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.47 Safari/536.11',
-           'Cookie': 'PHPSESSID=de45029e5e2fab4f6e5eef56515d6c1c; __utma=123692957.1658163614.1349740913.1349740913.1352756518.2; __utmb=204497347.1.10.1342787814; __utmc=204497347; __utmz=204497347.1341998344.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)' }
+           'Cookie': 'CM=%1%FtrSess%2C%2C-1%7CHomeAPers%2C%2C-1%7CHanaPersist%2C%2C-1%7CRCPers%2C%2C-1%7CPU_quick2%2C%2C-1%7CWarPopunder_Persist%2C%2C-1%7CPU_quick1%2C%2C-1%7Cbrandpers%2C%2C-1%7CSaveFtrSess%2C%2C-1%7CLastPopunderId%2C94-734-35119%2C-1%7CBPSess%2C3%2C-1%7CPUExitSurvSess%2C%2C-1%7CSaveFtrPers%2C%2C-1%7CHanaSession%2C%2C-1%7Csessamex%2C%2C-1%7CCCPers%2C%2C-1%7CBPPers%2C2%2C1410724460%7CMetaFtrSess%2C%2C-1%7CMetaFtrPers%2C%2C-1%7CFtrPers%2C%2C-1%7C%24%2C%2C-1%7Cvr_npu2%2C%2C-1%7CPUExitSurvPers%2C%2C-1%7Cvr_npu1%2C%2C-1%7Csh%2C%2C-1%7CRCSess%2C%2C-1%7CWShadeSeen%2C%2C-1%7CWAR_RESTAURANT_FOOTER_PERSISTANT%2C%2C-1%7CHomeASess%2C%2C-1%7CRBASess%2C%2C-1%7CWAR_RESTAURANT_FOOTER_SESSION%2C%2C-1%7CCCSess%2C%2C-1%7CRBAPers%2C%2C-1%7CWarPopunder_Session%2C%2C-1%7Cbrandsess%2C%2C-1%7Cpu_vr2%2C%2C-1%7Cpu_vr1%2C%2C-1%7Cpssamex%2C%2C-1%7C;__utma=126683336.2128020094.1410119662.1410119662.1410119662.1;__utmb=126683336.1.10.1410119662;__utmc=126683336;__utmz=126683336.1410119662.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)' }
 email_regex = re.compile(r'(\b[\w.]+@+[\w.]+.+[\w.]\b)')
 
 def get_url(url):
@@ -82,6 +82,6 @@ def parse_listing_pages(start_url):
         print "Finished page %s" % count
         count = count + 30
 
-start_url = "http://www.tripadvisor.com/AttractionsAjax-g155019?cat=25&o=a%s&sortOrder=popularity"
+start_url = "http://www.tripadvisor.com.tw/AttractionsAjax-g294217?cat=50&o=a%s&sortOrder=popularity"
 parse_listing_pages(start_url)
 
